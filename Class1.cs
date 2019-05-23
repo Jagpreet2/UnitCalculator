@@ -67,6 +67,24 @@ namespace CalcAppTest
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void GetSubtraction_Input5point0and4point0_Returns1point0()
+        {
+
+            //Arrange
+            double number1 = 5.0;
+            double number2 = 4.0;
+
+            double expectedResult = number1 - number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
 
 
     }
