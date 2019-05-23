@@ -85,6 +85,96 @@ namespace CalcAppTest
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void GetSubtraction_Input9point5and4point5_Returns5point0()
+        {
+
+            //Arrange
+            double number1 = 9.5;
+            double number2 = 4.5;
+
+            double expectedResult = number1 - number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetSubtraction_Input3point0and2point5_Returns0point5()
+        {
+
+            //Arrange
+            double number1 = 3.0;
+            double number2 = 2.5;
+
+            double expectedResult = number1 - number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetSubtraction();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetMultiplication_Input3point0and2point0_Returns6point0()
+        {
+
+            //Arrange
+            double number1 = 3.0;
+            double number2 = 2.0;
+
+            double expectedResult = number1 * number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetMultiplication_Input2point2and3point3_Returns7point26()
+        {
+
+            //Arrange
+            double number1 = 2.2;
+            double number2 = 3.3;
+
+            double expectedResult = number1 * number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetMultiplication_Input2point0and5point5_Returns11point0()
+        {
+
+            //Arrange
+            double number1 = 2.0;
+            double number2 = 5.5;
+
+            double expectedResult = number1 * number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetMultiplication();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
 
 
     }
